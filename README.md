@@ -1,4 +1,4 @@
-# Domain list community
+# v2ray-geosites
 
 This project manages a list of domains, to be used as geosites for routing purpose in Project V.
 
@@ -8,8 +8,8 @@ This project is not opinionated. In other words, it does NOT endorse, claim or i
 
 ## Download links
 
-- **dlc.dat**：[https://github.com/v2fly/domain-list-community/releases/latest/download/dlc.dat](https://github.com/v2fly/domain-list-community/releases/latest/download/dlc.dat)
-- **dlc.dat.sha256sum**：[https://github.com/v2fly/domain-list-community/releases/latest/download/dlc.dat.sha256sum](https://github.com/v2fly/domain-list-community/releases/latest/download/dlc.dat.sha256sum)
+- **dlc.dat**：[https://github.com/krandes/v2ray-geosites/releases/latest/download/dlc.dat](https://github.com/krandes/v2ray-geosites/releases/latest/download/dlc.dat)
+- **dlc.dat.sha256sum**：[https://github.com/krandes/v2ray-geosites/releases/latest/download/dlc.dat.sha256sum](https://github.com/krandes/v2ray-geosites/releases/latest/download/dlc.dat.sha256sum)
 
 ## Usage example
 
@@ -128,10 +128,6 @@ Theoretically any string can be used as the name, as long as it is a valid file 
 
 Attribute is useful for sub-group of domains, especially for filtering purpose. For example, the list of `google` domains may contains its main domains, as well as domains that serve ads. The ads domains may be marked by attribute `@ads`, and can be used as `geosite:google@ads` in V2Ray routing.
 
-## Contribution guideline
+## Credits
 
-- Fork this repo, make modifications to your own repo, file a PR.
-- Please begin with small size PRs, say modification in a single file.
-- A PR must be reviewed and approved by another member.
-- A script will verify your pull request to test whether your PR is correct or not every time you update the PR. Only the PR which passes the test will be merged. Please go to the Action label to get detailed information if you didn't pass it. We also provide the file which has been generated to make you test.
-- After a few successful PRs, you may apply for manager access to this repository.
+- [v2fly/domain-list-community](https://github.com/v2fly/domain-list-community)
