@@ -27,11 +27,14 @@ include:megamarket
 include:moex
 include:ngenix
 include:okko
+include:ostrovok
 include:ozon
 include:pikabu
+include:redwings
 include:rozetked
 include:rutube
 include:ruvds
+include:s7
 include:samokat
 include:sber
 include:selectel
@@ -42,6 +45,7 @@ include:ufohosting
 include:vc
 include:vk
 include:vtb
+include:webskytech
 include:wink
 include:x5
 include:yandex
