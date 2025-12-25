@@ -1,6 +1,6 @@
-# v2ray-geosites
+# V2Ray Geosite
 
-This project manages a list of domains, to be used as geosites for routing purpose in Project V.
+This repo manages a list of domains focusing on Russian services, to be used as geosites for routing purposes in Project V.
 
 ## Purpose of this project
 
@@ -8,70 +8,62 @@ This project is not opinionated. In other words, it does NOT endorse, claim or i
 
 ## Download links
 
-- **dlc.dat**：[https://github.com/krandes/v2ray-geosites/releases/latest/download/dlc.dat](https://github.com/krandes/v2ray-geosites/releases/latest/download/dlc.dat)
-- **dlc.dat.sha256sum**：[https://github.com/krandes/v2ray-geosites/releases/latest/download/dlc.dat.sha256sum](https://github.com/krandes/v2ray-geosites/releases/latest/download/dlc.dat.sha256sum)
+- **geosite.dat**：[https://github.com/krandes/v2ray-geosite/releases/latest/download/geosite.dat](https://github.com/krandes/v2ray-geosite/releases/latest/download/geosite.dat)
+- **geosite.dat.sha256sum**：[https://github.com/krandes/v2ray-geosite/releases/latest/download/geosite.dat.sha256sum](https://github.com/krandes/v2ray-geosite/releases/latest/download/geosite.dat.sha256sum)
 
 ## Usage example
 
 Each file in the `data` directory can be used as a rule in this format: `geosite:filename`.
 
 ```json
-"routing": {
-  "domainStrategy": "IPIfNonMatch",
-  "rules": [
-    {
-      "type": "field",
-      "outboundTag": "Reject",
-      "domain": [
-        "geosite:category-ads-all",
-        "geosite:category-porn"
-      ]
-    },
-    {
-      "type": "field",
-      "outboundTag": "Direct",
-      "domain": [
-        "domain:icloud.com",
-        "domain:icloud-content.com",
-        "domain:cdn-apple.com",
-        "geosite:cn",
-        "geosite:private"
-      ]
-    },
-    {
-      "type": "field",
-      "outboundTag": "Proxy-1",
-      "domain": [
-        "geosite:category-anticensorship",
-        "geosite:category-media",
-        "geosite:category-vpnservices"
-      ]
-    },
-    {
-      "type": "field",
-      "outboundTag": "Proxy-2",
-      "domain": [
-        "geosite:category-dev"
-      ]
-    },
-    {
-      "type": "field",
-      "outboundTag": "Proxy-3",
-      "domain": [
-        "geosite:geolocation-!cn"
-      ]
-    }
-  ]
+{
+  "routing": {
+    "domainStrategy": "IPIfNonMatch",
+    "rules": [
+      {
+        "type": "field",
+        "outboundTag": "Reject",
+        "domain": [
+          "geosite:kaspersky"
+        ]
+      },
+      {
+        "type": "field",
+        "outboundTag": "Direct",
+        "domain": [
+          "domain:icloud.com",
+          "domain:icloud-content.com",
+          "domain:cdn-apple.com",
+          "geosite:private"
+        ]
+      },
+      {
+        "type": "field",
+        "outboundTag": "Proxy-1",
+        "domain": [
+          "geosite:yandex",
+          "geosite:sber"
+        ]
+      },
+      {
+        "type": "field",
+        "outboundTag": "Proxy-2",
+        "domain": [
+          "geosite:category-ru"
+        ]
+      }
+    ]
+  }
 }
 ```
 
-## Generate `dlc.dat` manually
+## Generate `geosite.dat` manually
 
 - Install `golang` and `git`
-- Clone project code: `git clone https://github.com/v2fly/domain-list-community.git`
-- Navigate to project root directory: `cd domain-list-community`
+- Clone project code: `git clone https://github.com/krandes/v2ray-geosite.git`
+- Navigate to project root directory: `cd v2ray-geosite`
 - Install project dependencies: `go mod download`
-- Generate `dlc.dat` (without `datapath` option means to use domain lists in `data` directory of current working directory):
+- Generate `geosite.dat` (without `datapath` option means to use domain lists in `data` directory of current working directory):
   - `go run ./`
   - `go run ./ --datapath=/path/to/your/custom/data/directory`
 

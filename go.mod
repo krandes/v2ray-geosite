@@ -1,4 +1,4 @@
-module github.com/v2fly/domain-list-community
+module github.com/krandes/v2ray-geosite
 
 go 1.24.0
 

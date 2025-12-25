@@ -1,28 +1,48 @@
-# Russian websites
+# Russian Services
 
-# Russian TLDs
-moscow
-tatar
-ru
-su
-xn--80adxhks
-xn--80asehdb
-xn--80aswg
-xn--c1avg
-xn--d1acj3b
-xn--p1acf
-xn--p1ai
+include:category-tlds-ru
 
-ru.com
-ru.net
-
-include:category-gov-ru
-
+include:2ch
+include:2gis
+include:4pda
+include:alfabank
+include:amediateka
+include:aviasales
+include:avito
+include:beget
+include:cian
+include:cloud4box
+include:cloudru
+include:emias
+include:escapefromtarkov
+include:gazprombank
 include:habr
-include:mailru-group
+include:ixbt
+include:kaspersky
+include:kkbank
+include:koronapay
+include:koshelek
+include:kuper
+include:megamarket
+include:moex
+include:ngenix
 include:okko
 include:ozon
+include:pikabu
+include:rozetked
 include:rutube
+include:ruvds
+include:samokat
+include:sber
+include:selectel
+include:sovcombank
+include:tbank
+include:timeweb
+include:ufohosting
+include:vc
+include:vk
+include:vtb
 include:wink
 include:x5
 include:yandex
+include:zvuk

@@ -1,8 +1,4 @@
-# All .yandex domains
-yandex
-
-# яндекс.рф
-xn--d1acpjx3f.xn--p1ai
+# Yandex
 
 adfox.ru
 admetrica.ru
@@ -11,8 +7,10 @@ rostaxi.org
 turbopages.org
 webvisor.com
 webvisor.org
+xn--d1acpjx3f.xn--p1ai # яндекс.рф
 ya.ru
 yads.tech
+yandex
 yandex-bank.net
 yandex-images.clstorage.net
 yandex-team.ru
@@ -57,6 +55,6 @@ yandexwebcache.org
 yastat.net
 yastatic.net
 
-# Watching movies, included in the Yandex subscription
+## Kinopoisk
+
 kinopoisk.ru
-kinopoisk-ru.clstorage.net
