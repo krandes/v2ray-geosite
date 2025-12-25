@@ -1,11 +1,11 @@
 .idea
 .vscode
 
-/domain-list-community
-/domain-list-community.exe
+/v2ray-geosite
+/v2ray-geosite.exe
 
-# Generated dat file.
-dlc.dat
+# Generated dat file
+geosite.dat
 
-# Exported plaintext lists.
+# Exported plaintext lists
 /*.txt
